@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="3dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="641dp"
+        android:layout_toRightOf="@id/imageView"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="13dp"/>
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="641dp"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/textViewId"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="13dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewSinge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="656dp"
+        android:layout_below="@id/textViewName"
+        android:layout_toRightOf="@id/imageView"
+        android:textSize="18dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSinge"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="13dp">
+
+        <Button
+            android:id="@+id/buttonSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/buttonXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xoá"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+</RelativeLayout>
